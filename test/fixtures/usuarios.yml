@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  apellido: MyString
+  numero_de_reparacion: 1
+  estado: MyText
+
+two:
+  nombre: MyString
+  apellido: MyString
+  numero_de_reparacion: 1
+  estado: MyText

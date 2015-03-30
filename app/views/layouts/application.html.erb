@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LaserApp</title>
+  <%#= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%#= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <link rel="shortcut icon" href="/favicon.ico"/>
+
+
+  <link rel="stylesheet" type="text/css" href="/assets/bootstrap.min.css"/>
+
+  <link rel="stylesheet" type="text/css" href="/assets/global.css"/>
+
+  <link rel="stylesheet" type="text/css" href="/assets/typo.css"/>
+
+  <link rel="stylesheet" type="text/css" href="/assets/colorbox.css"/>
+
+  <link rel="stylesheet" type="text/css" href="/assets/boxes.css"/>
+
+  <link rel="stylesheet" type="text/css" href="/assets/social.css"/>
+
+
+  <!--Fonts-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,cyrillic'
+        rel='stylesheet' type='text/css'/>
+
+  <!--Fonts with Icons-->
+  <link rel="stylesheet" href="/assets/fontello.css"/>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+
+<script src="/assets/jquery-1.11.0.min.js"></script>
+<script src="/assets/bootstrap.min.js"></script>
+<script src="/assets/requestAnimationFramePolyfill.min.js"></script>
+<script src="/assets/jquery.easing.1.3.js"></script>
+<script src="/assets/jquery.scrollTo.min.js"></script>
+<script src="/assets/jquery.colorbox-min.js"></script>
+<script src="/assets/pi.global.js"></script>
+
+</html>

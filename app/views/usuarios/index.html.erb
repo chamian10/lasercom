@@ -1,0 +1,92 @@
+<p id="notice"><%= notice %></p>
+
+<div id="pi-all">
+
+
+  <div id="page"><!-- - - - - - - - - - SECTION - - - - - - - - - -->
+    <div class="pi-section-w pi-section-white piICheck piStylishSelect" style="background: #f4f6f6;">
+      <div class="pi-section pi-padding-bottom-60">
+
+        <div class="pi-text-center pi-margin-bottom-50">
+          <h1 class="pi-uppercase pi-weight-700 pi-has-border pi-has-tall-border pi-has-short-border">
+            AREA CLIENTES
+          </h1>
+
+          <p>Por favor ingrese en número de reparación proporcionado:</p>
+
+
+        </div>
+
+        <!-- Row -->
+        <div class="pi-row">
+
+          <!-- Col 4 -->
+          <div class="pi-col-md-4 pi-col-md-offset-4 pi-col-sm-6 pi-col-sm-offset-3 pi-col-xs-8 pi-col-xs-offset-2">
+
+            <!-- Box -->
+            <div class="pi-box pi-round pi-shadow-15">
+
+              <!-- Email form -->
+              <div class="form-group">
+                <div class="pi-input-with-icon">
+                  <div class="pi-input-icon"></div>
+
+
+                  <%= form_tag usuarios_path, :method => 'get' do %>
+
+                      </div>
+                      </div>
+
+                      <p>
+                        <%= text_field_tag :search, params[:search], :class => 'form-control input' %><br/><br/>
+                        <%= submit_tag "Ver estado", :class => 'btn pi-btn-base pi-btn-wide pi-weight-600' %>
+                      </p>
+                  <% end %>
+
+
+                  </div>
+
+          </div>
+          <!-- End col 4 -->
+
+        </div>
+
+
+        <div class="pi-text-center">
+          <% nro=params[:search] %>
+
+          <% @usuarios.each do |usuario| %>
+
+              <% if usuario.numero_de_reparacion.to_s == nro.to_s %>
+                  <br/><br/>
+
+                  <h3 style="color: blue"> <%= 'Hola '+ usuario.nombre.capitalize + ' ' + usuario.apellido.capitalize+'!' %></h3>
+
+                  <h3>Estado de la reparación</h3>
+
+                  <p><%= usuario.estado %></p>
+
+              <% else %>
+
+
+              <% end %>
+
+          <% end %>
+        </div>
+      </div>
+      <!-- End row -->
+
+    </div>
+  </div>
+  <!-- - - - - - - - - - END SECTION - - - - - - - - - --></div>
+
+
+
+
+
+
+
+
+
+
+
