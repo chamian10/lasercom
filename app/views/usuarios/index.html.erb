@@ -24,7 +24,7 @@
           <div class="pi-col-md-4 pi-col-md-offset-4 pi-col-sm-6 pi-col-sm-offset-3 pi-col-xs-8 pi-col-xs-offset-2">
 
             <!-- Box -->
-            <div class="pi-box pi-round pi-shadow-15">
+            <div class="pi-box pi-round pi-shadow-15" style="background-color: rgb(29, 29, 29);">
 
               <!-- Email form -->
               <div class="form-group">
@@ -38,7 +38,7 @@
                       </div>
 
                       <p>
-                        <%= text_field_tag :search, params[:search], :class => 'form-control input' %><br/><br/>
+                        <%= text_field_tag :search, params[:search], :class => 'form-control input', :placeholder=>'Ingresse nro....' %><br/><br/>
                         <%= submit_tag "Ver estado", :class => 'btn pi-btn-base pi-btn-wide pi-weight-600' %>
                       </p>
                   <% end %>
